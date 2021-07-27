@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #181a20;
+    --font-color: white;
+    --secondery-color: #e3b00c;
+}
+
+.flex {
+    display: flex;
+}
+
+header nav {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 50px;
+}
+
+header nav .logo {
+    text-transform: capitalize;
+    color: var(--secondery-color);
+    font-size: 25px;
+    text-shadow: 0 0 15px var(--secondery-color);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+header nav ul li a:hover {
+    color: var(--secondery-color);
+    transition: all 0.5s ease;
+}
+
+header nav .icon-socail li {
+    cursor: pointer;
+}
+
+header nav .icon-socail li a {
+    transition: all 0.5s ease;
+    font-size: 22px;
+}
+
+header nav .icon-socail li a:hover,
+{
+    color: var(--secondery-color);
+    text-shadow: 0 0 15px var(--secondery-color);
+    transition: all 0.5s ease;
+}
