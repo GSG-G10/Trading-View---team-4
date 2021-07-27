@@ -15,7 +15,6 @@ const addClass = (ele, className) => {
 const createCard = (i, obj) => {
   const name = sympols[i];
   const price = obj.price;
-  appendElement(sympolsContainer, sympolDiv);
   const sympolName = createElement("h2");
   addClass(sympolDiv, "sympol-name");
   sympolName.textContent = name;
@@ -30,4 +29,17 @@ const createCard = (i, obj) => {
   const priceNum = createElement("p");
   priceNum.textContent = price;
   appendElement(priceDiv, priceNum);
+};
+
+const addPriceChanges = (obj) => {
+  const priceChanges = obj.priceChange;
+  const changesDiv = createElement("div");
+  addClass(changesDiv, "price-changes");
+  appendElement(sympolDiv, changesDiv);
+  const changePara = createElement("p");
+  changePara.textContent = "24h Price Changes: ";
+  appendElement(changesDiv, changePara);
+  const changeNum = createElement("p");
+  changeNum.textContent = priceChanges;
+  appendElement(changesDiv, changeNum);
 };
