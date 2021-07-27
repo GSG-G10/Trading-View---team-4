@@ -98,3 +98,37 @@ section .clock div {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+section .heade-market {
+    justify-content: space-between;
+    width: 78%;
+    margin: 31px auto;
+}
+
+section .heade-market div {
+    align-items: center;
+    font-size: 18px;
+}
+
+section .heade-market div input {
+    margin-left: 24px;
+    padding: 5px;
+}
+
+section table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 78%;
+    margin: 10px auto;
+}
+
+section table td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+section table tr:nth-child(even) {
+    background-color: #dddddd;
+}
