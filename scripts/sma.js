@@ -21,7 +21,8 @@ function calculateSma(number,arr, format,range=7) {
     while (++idx < len) {
       res.push(fn(avg(new_a, idx, num)));
     }
-    changeIndecatorValue(number,res[res.length - 1]);
+    let smaFinalValue =  parseFloat(res[res.length - 1]); 
+    changeIndecatorValue(number,smaFinalValue.toFixed(4));
 }
 
 

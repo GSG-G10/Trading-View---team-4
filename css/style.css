@@ -112,7 +112,16 @@ header nav .icon-socail li a:hover {
     display: block;
 }
 
+.indecatorValue{
+    display: flex;
+    align-items: center;
+}
 
+.indecators{
+    width: 100%;
+    justify-content: space-around;
+
+}
 /* Change color of dropdown links on hover */
 
 .dropdown-content span:hover {

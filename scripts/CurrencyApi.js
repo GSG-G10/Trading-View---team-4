@@ -25,6 +25,7 @@ const fetchPriceData = () => {
   }
 };
 fetchPriceData(); // invoke the function
+
 searchBtn.addEventListener('click',() => {
   clearCards();
   let priceUrl = `https://api.binance.com/api/v3/ticker/price?symbol=${searchInput.value}`;

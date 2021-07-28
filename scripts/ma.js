@@ -8,7 +8,9 @@ function calculateMa(arr,num){
         }
         
     }
-    changeIndecatorValue(num,emaValue/9)
+    let emaFinalValue = emaValue/9;
+
+    changeIndecatorValue(num,emaFinalValue.toFixed(4))
 }
 
 function maclick(num,creptoName){
