@@ -1,21 +1,20 @@
 const timeFetch = () => {
-    const basicUrl = 'https://worldtimeapi.org/api/timezone/';
+    const basicUrl = 'https://timezoneapi.io/api/timezone/?token=afzVJRxSmzsnSXBVRmLJ&timezone=';
     const urls = ['Europe/London', 'Asia/Jerusalem', 'Europe/Moscow'];
     for (let i = 0; i < urls.length; i++)
         fetchFromURL(basicUrl + urls[i], extractTime);
 };
 
 const extractTime = (data) => {
-    const city = data['timezone'].split('/')[1];
-    const timeText = data['datetime'].split(':');
-    const hours = timeText[0].substring(timeText[0].length - 2) - 0;
+    const city = data['data']['timezone']['id'].split('/')[1];
+    const timeText = data['data']['datetime']['time'].split(':');
+    const hours = timeText[0] - 0;
     const mins = timeText[1] - 0;
-    const secs = timeText[2].substring(0, 2) - 0;
-    const milliSecs = timeText[2].substring(3, 6) - 0;
+    const secs = timeText[2] - 0;
 
     showTime(hours, mins, secs, city);
 
-    setTimeout(() => updateTime(hours, mins, secs, city), 1000 - milliSecs);
+    setTimeout(() => updateTime(hours, mins, secs, city), 1000);
 
 };
 
