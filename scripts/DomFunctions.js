@@ -80,3 +80,10 @@ const addPriceChanges = (obj) => {
   changeNum.textContent = priceChanges;
   appendElement(changesDiv, changeNum);
 };
+
+
+
+const clearCards = () => {
+  const sympolDiv = document.querySelector(".sympol-container");
+  sympolDiv.textContent = ''
+}

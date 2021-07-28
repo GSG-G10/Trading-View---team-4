@@ -9,11 +9,3 @@ const fetchFromURL = (url, cb) => {
     xhr.send();
 }
 
-
-
-function testFunc(classn,name){
-    console.log(classn)
-    console.log(name)
-
-}
-
