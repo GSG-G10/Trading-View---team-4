@@ -88,7 +88,7 @@ header nav .icon-socail li a:hover {
 }
 
 
-/*** start responsive header ****/
+/*** end responsive header ****/
 
 
 /**** end header ***/
@@ -161,6 +161,9 @@ header nav .icon-socail li a:hover {
 
 /* finsh dropdown  */
 
+
+/**clock section start***/
+
 section {
     margin: 10px;
     justify-content: center;
@@ -194,6 +197,44 @@ section .clock div {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+
+/**** responsive clock section ****/
+
+@media only screen and (max-width: 992px) {
+    section .clock h2 {
+        font-size: 1.1rem;
+    }
+    section .clock div {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section .clock h2 {
+        font-size: .7rem;
+    }
+    section .clock div {
+        font-size: .8rem;
+        margin-top: 13px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .clock-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .clock-cont .clock {
+        width: 60%;
+    }
+}
+
+
+/**** responsive clock section end****/
+
+
+/**clock section end***/
 
 
 /********** exchang section**********/
