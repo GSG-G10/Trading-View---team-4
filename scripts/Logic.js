@@ -8,3 +8,12 @@ const fetchFromURL = (url, cb) => {
     xhr.open("GET", url);
     xhr.send();
 }
+
+
+
+function testFunc(classn,name){
+    console.log(classn)
+    console.log(name)
+
+}
+

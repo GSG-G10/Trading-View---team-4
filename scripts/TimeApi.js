@@ -13,7 +13,7 @@ const extractTime = (data) => {
     const secs = timeText[2].substring(0, 2) - 0;
     const milliSecs = timeText[2].substring(3, 6) - 0;
     //displayTime(hours, mins, secs, city);
-    console.log(hours, mins, secs, city);
+    // console.log(hours, mins, secs, city);
     setTimeout(() => updateTime(hours, mins, secs, city), 1000 - milliSecs);
 };
 
@@ -22,7 +22,7 @@ const updateTime = (hours, mins, secs, city) => {
     mins = secs !== 0 ? mins : mins === 59 ? 0 : mins + 1;
     hours = mins !== 0 || secs !== 0 ? hours : hours === 23 ? 0 : hours + 1;
     //displayTime(hours, mins, secs, city);
-    console.log(hours, mins, secs, city);
+    // console.log(hours, mins, secs, city);
     setTimeout(() => updateTime(hours, mins, secs, city), 1000);
 };
 

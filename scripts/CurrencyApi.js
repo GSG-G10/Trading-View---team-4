@@ -1,3 +1,5 @@
+// let sympol;
+let priceUrl = `https://api.binance.com/api/v3/ticker/price?symbol=`;
 const sympols = [
   "BTCUSDT",
   "ETHUSDT",
