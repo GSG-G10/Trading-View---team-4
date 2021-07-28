@@ -89,6 +89,6 @@ const addPriceChanges = (obj) => {
 
 
 const clearCards = () => {
-  const sympolDiv = document.querySelector(".sympol-container");
+  const sympolDiv = document.querySelector(".sympols-section");
   sympolDiv.textContent = ''
 }
