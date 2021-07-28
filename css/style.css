@@ -115,20 +115,101 @@ section .heade-market div input {
     padding: 5px;
 }
 
-section table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 78%;
-    margin: 10px auto;
+
+/*start section show-exchange*/
+
+.show-exchange {
+    min-height: 500px;
 }
 
-section table td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+
+/*end section show-exchange*/
+
+
+/*style footer */
+
+footer .newssetler {
+    background-color: var(--secondery-color);
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    height: 110px;
 }
 
-section table tr:nth-child(even) {
-    background-color: #dddddd;
+footer .newssetler p {
+    font-size: 25px;
+    width: 30%;
+    margin-right: 100px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
 }
+
+footer .newssetler div input,
+footer .newssetler div button {
+    padding: 10px 40px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    border: none
+}
+
+footer .newssetler div input::placeholder {
+    text-transform: capitalize;
+    font-size: 18px;
+    opacity: .5;
+}
+
+footer .newssetler div input:focus {
+    outline: none;
+}
+
+footer .newssetler div button {
+    padding: 9px 10px;
+    color: var(--secondery-color)
+}
+
+footer nav {
+    background-color: var(--primary-color);
+}
+
+footer nav ul {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--font-color);
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+footer nav ul li a:hover {
+    color: var(--secondery-color);
+    text-shadow: 0 0 15px var(--secondery-color);
+    transition: all 0.5s ease;
+}
+
+.text {
+    font-size: 18px;
+    color: var(--font-color);
+    line-height: 1.5;
+    background-color: var(--primary-color);
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+footer .copywrite {
+    border-top: .5px solid rgb(128, 125, 125);
+}
+
+
+/* end footer style */
