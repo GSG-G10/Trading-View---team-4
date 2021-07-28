@@ -3,13 +3,17 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 :root {
     --primary-color: #181a20;
     --font-color: white;
     --secondery-color: #e3b00c;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .flex {
@@ -69,12 +73,13 @@ header nav .icon-socail li a:hover {
 /* start dropdown  */
 
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--secondery-color);
+    color: var(--primary-color);
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 
@@ -125,7 +130,8 @@ header nav .icon-socail li a:hover {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: var(--secondery-color);
+    color: var(--primary-color);
 }
 
 
@@ -164,6 +170,69 @@ section .clock div {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+
+/********** exchang section**********/
+
+section .heade-market {
+    justify-content: space-between;
+    width: 78%;
+    margin: 31px auto;
+}
+
+section .heade-market div {
+    align-items: center;
+    font-size: 18px;
+}
+
+section .heade-market div input {
+    margin-left: 24px;
+    padding: 5px;
+}
+
+.show-exchange {
+    min-height: 500px;
+}
+
+.show-exchange .sympols-section {
+    flex-wrap: wrap;
+    width: 79%;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+
+.show-exchange .sympols-section .sympol-name {
+    box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.6);
+    width: 30%;
+    margin-bottom: 15px;
+    background-color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.show-exchange .sympols-section .sympol-name .last-price,
+.show-exchange .sympols-section .sympol-name .price-changes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.show-exchange .sympols-section .sympol-name .last-price p:last-child,
+.show-exchange .sympols-section .sympol-name .price-changes p:last-child {
+    color: var(--secondery-color);
+    margin-left: 10px;
+}
+
+
+/**********  end exchang section**********/
 
 
 /*style footer */
