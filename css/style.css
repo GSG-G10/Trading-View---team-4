@@ -122,6 +122,19 @@ section .heade-market div input {
     min-height: 500px;
 }
 
+.show-exchange .sympols-section {
+    flex-wrap: wrap;
+    width: 79%;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+
+.show-exchange .sympols-section .sympol-name {
+    background-color: gray;
+    width: 30%;
+    margin-bottom: 5px;
+}
+
 
 /*end section show-exchange*/
 

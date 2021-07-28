@@ -17,20 +17,21 @@ const setUrl = () => {
         fetchFromURL(priceUrl, (obj) => {
             const name = sympols[i];
             const price = obj.price;
-            appendElement(sympolsContainer, sympolDiv);
+            const childOfsympolsContainer = createElement("div");
+            appendElement(sympolsContainer, childOfsympolsContainer);
             const sympolName = createElement("h2");
-            addClass(sympolDiv, "sympol-name");
+            addClass(childOfsympolsContainer, "sympol-name");
             sympolName.textContent = name;
-            appendElement(sympolDiv, sympolName);
+            appendElement(childOfsympolsContainer, sympolName);
             const priceDiv = createElement("div");
             addClass(priceDiv, "last-price");
-            appendElement(sympolDiv, priceDiv);
+            appendElement(childOfsympolsContainer, priceDiv);
             const pricePara = createElement("p");
             pricePara.textContent = "price: ";
-            appendElement(priceDiv, pricePara);
+            appendElement(childOfsympolsContainer, pricePara);
             const priceNum = createElement("p");
             priceNum.textContent = price;
-            appendElement(priceDiv, priceNum);
+            appendElement(childOfsympolsContainer, priceNum);
         });
     }
 };
