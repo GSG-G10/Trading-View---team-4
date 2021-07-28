@@ -1,6 +1,4 @@
-
-const sma = document.querySelector('.sma')
-function calculateSma(arr, format,range=7) {
+function calculateSma(number,arr, format,range=7) {
     let new_a = []
     for(let ele=0 ; ele < 10;ele++){
         try {
@@ -23,7 +21,7 @@ function calculateSma(arr, format,range=7) {
     while (++idx < len) {
       res.push(fn(avg(new_a, idx, num)));
     }
-    changeIndecatorValue(res[res.length - 1]);
+    changeIndecatorValue(number,res[res.length - 1]);
 }
 
 
@@ -47,7 +45,7 @@ function toFixed(n) {
   
  
   
-sma.addEventListener('click',() => {
-    fetchFromURL('https://api.binance.com/api/v3/klines?symbol=NANOUSDT&interval=5m',calculateSma)
-})
+function smaclick(num,creptoName) {
+    fetchFromURL(`https://api.binance.com/api/v3/klines?symbol=${creptoName}&interval=5m`,(value) => {calculateSma(num,value)})
+}
 

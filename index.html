@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,45 +12,41 @@
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     /> -->
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav class="flex">
-        <div class="logo">tradingView</div>
-        <ul class="flex">
-          <li>
-            <a href="#">markets</a>
-          </li>
-          <li>
-            <a href="#">trade </a>
-          </li>
-          <li>
-            <a href="#">derivatives</a>
-          </li>
-          <li>
-            <a href="#">finance</a>
-          </li>
-          <li>
-              <a href="#">fnt</a>
-            </li>
-        </ul>
-        
-    </ul>
-</nav>
-</header>
-<section class="flex">
-    <div class="clock flex">
-        <h2>london</h2>
+        <nav class="flex">
+            <div class="logo">tradingView</div>
+            <ul class="flex">
+                <li>
+                    <a href="#">markets</a>
+                </li>
+                <li>
+                    <a href="#">trade </a>
+                </li>
+                <li>
+                    <a href="#">derivatives</a>
+                </li>
+                <li>
+                    <a href="#">finance</a>
+                </li>
+                <li>
+                    <a href="#">fnt</a>
+                </li>
+            </ul>
 
-        <div class="clock-london">02:11:3</div>
-    </div>
-    <div class="clock flex">
-        <h2>jerusalem</h2>
+            </ul>
+        </nav>
+    </header>
+    <section class="flex">
+        <div class="clock flex">
+            <h2>london</h2>
 
-        <div class="clock-london">02:11:3</div>
-    </div>
-    <div class="clock flex">
-        <h2>china</h2>
+            <div class="clock-London">00:00:00</div>
+        </div>
+        <div class="clock flex">
+            <h2>jerusalem</h2>
 
         </nav>
     </header>
@@ -58,16 +55,27 @@
     <div class="dropdown">
         <button class="dropbtn">Dropdown</button>
         <div class="dropdown-content">
-          <span class="ema">ema</span>
+          <span class="ma">ema</span>
           <span class="sma">sma</span>
-          <span >Link 3</span>
         </div>
       </div> -->
 
         <div class="clock-china">02:11:3</div>
     </div>
+            <div class="clock-Jerusalem">00:00:00</div>
+        </div>
+        <div class="clock flex">
+            <h2>moscow</h2>
 
-</section>
+            <div class="clock-Moscow">00:00:00</div>
+        </div>
+
+    </section>
+
+    <section class="search">
+        <input type="text">
+        <button class="searchBtn">search</button>
+    </section>
     <section class="sympols-section">
         <div class="sympol-container"></div>
         <div class="sympol-container"></div>
@@ -80,12 +88,13 @@
         <div class="sympol-container"></div>
         <div class="sympol-container"></div>
     </section>
-
+    <script src="./scripts/DomFunctions.js"></script>
     <script src="./scripts/Logic.js"></script>
     <script src="./scripts/CurrencyApi.js"></script>
     <script src="./scripts/DomFunctions.js"></script>
-    <script src="./scripts/ema.js"></script>
+    <script src="./scripts/TimeApi.js"></script>
+    <script src="./scripts/ma.js"></script>
     <script src="./scripts/sma.js"></script>
+</body>
 
-  </body>
 </html>

@@ -1,5 +1,4 @@
-const ema = document.querySelector('.ema')
-function calculateMa(arr){
+function calculateMa(arr,num){
     let emaValue = 0;
     for(let ele=0 ; ele < 10;ele++){
         try {
@@ -9,14 +8,9 @@ function calculateMa(arr){
         }
         
     }
-    changeIndecatorValue(emaValue/9)
+    changeIndecatorValue(num,emaValue/9)
 }
 
-
-
-ema.addEventListener('click',() => {
-    fetchFromURL('https://api.binance.com/api/v3/klines?symbol=NANOUSDT&interval=5m',calculateMa)
-})
-
-
-
+function maclick(num,creptoName){
+    fetchFromURL(`https://api.binance.com/api/v3/klines?symbol=${creptoName}&interval=5m`,(value) => {calculateMa(value,num)})
+}
