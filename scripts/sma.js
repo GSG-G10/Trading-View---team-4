@@ -27,22 +27,7 @@ function calculateSma(number,arr, format,range=7) {
 
 
 
-function avg(arr, idx, range) {
-    return sum(arr.slice(idx - range, idx)) / range;
-}
-  
 
-function sum(arr) {
-    var len = arr.length;
-    var num = 0;
-    while (len--) num += Number(arr[len]);
-    return num;
-}
-
-function toFixed(n) {
-    return n.toFixed(2);
-}
-  
  
   
 function smaclick(num,creptoName) {
