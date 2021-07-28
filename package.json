@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "directories": {
+    "test": "test"
+    },
+    "scripts": {
     "test": "jest"
   },
   "repository": {

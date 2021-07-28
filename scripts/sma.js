@@ -23,13 +23,6 @@ function calculateSma(number,arr, format,range=7) {
     }
     changeIndecatorValue(number,res[res.length - 1]);
 }
-
-
-
-
-
- 
-  
 function smaclick(num,creptoName) {
     fetchFromURL(`https://api.binance.com/api/v3/klines?symbol=${creptoName}&interval=5m`,(value) => {calculateSma(num,value)})
 }
