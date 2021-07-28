@@ -304,6 +304,35 @@ section .heade-market div input {
 }
 
 
+/*** responsive exchange section*****/
+
+@media only screen and (max-width: 992px) {
+    .show-exchange .sympols-section .sympol-name .last-price,
+    .show-exchange .sympols-section .sympol-name .price-changes {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .show-exchange .sympols-section .sympol-name {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .show-exchange .sympols-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .show-exchange .sympols-section .sympol-name {
+        width: 80%;
+    }
+}
+
+
+/***  end responsive exchange section*****/
+
+
 /**********  end exchang section**********/
 
 
@@ -391,6 +420,18 @@ footer nav ul li a:hover {
 footer .copywrite {
     border-top: .5px solid rgb(128, 125, 125);
 }
+
+
+/*** start resposive footer ****/
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width:600px) {}
+
+
+/*** end resposive footer ****/
 
 
 /* end footer style */
