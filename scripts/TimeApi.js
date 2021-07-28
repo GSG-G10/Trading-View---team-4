@@ -31,6 +31,6 @@ const updateTime = (hours, mins, secs, city) => {
 timeFetch();
 
 function showTime(hours, mins, secs, city) {
-    const clock = document.querySelector(".clock-" + city);
+    const clock = document.querySelector(`.clock-${city}`);
     clock.innerText = `${hours < 10 ? '0' + hours : hours}: ${ mins < 10 ? '0' + mins : mins }: ${ secs < 10 ? '0' + secs : secs }`;
 }
