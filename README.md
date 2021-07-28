@@ -1,5 +1,5 @@
 # Trading View Website
-<a href="">Live link</a> <br>
+<a href="https://gsg-g10.github.io/Trading-View---team-4/">Live link</a> <br>
 <a href="https://www.figma.com/file/LMLzCgAZLhZD3XnLKNPnK6/Untitled?node-id=0%3A1">Figma Link</a>
 ## Website Info
 Trading view is a website that shows the prices and the changes on them for a group of trending currencies in the world which will be useful for traders and bussinessmen all over the world.
