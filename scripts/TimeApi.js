@@ -15,6 +15,7 @@ const extractTime = (data) => {
     //displayTime(hours, mins, secs, city);
     // console.log(hours, mins, secs, city);
     setTimeout(() => updateTime(hours, mins, secs, city), 1000 - milliSecs);
+    showTime(hours, mins, secs, city);
 };
 
 const updateTime = (hours, mins, secs, city) => {
@@ -27,3 +28,8 @@ const updateTime = (hours, mins, secs, city) => {
 };
 
 timeFetch();
+
+function showTime(hours, mins, secs, city) {
+    const clock = document.querySelector(".clock-" + city);
+    clock.innerText = `${hours < 10 ? '0' + hours : hours}: ${ mins < 10 ? '0' + mins : mins }: ${ secs < 10 ? '0' + secs : secs }`;
+}
