@@ -65,7 +65,9 @@ header nav .icon-socail li a:hover {
     transition: all 0.5s ease;
 }
 
+
 /* start dropdown  */
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -73,45 +75,62 @@ header nav .icon-socail li a:hover {
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content span {
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content span {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content span:hover {background-color: #f1f1f1}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content span:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
     background-color: #3e8e41;
-  }
+}
+
+
 /* finsh dropdown  */
+
 section {
     margin: 10px;
     justify-content: center;
@@ -145,3 +164,92 @@ section .clock div {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+
+/*style footer */
+
+footer .newssetler {
+    background-color: var(--secondery-color);
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+footer .newssetler p {
+    font-size: 25px;
+    width: 30%;
+    margin-right: 100px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+}
+
+footer .newssetler div input,
+footer .newssetler div button {
+    padding: 10px 40px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    border: none
+}
+
+footer .newssetler div input::placeholder {
+    text-transform: capitalize;
+    font-size: 18px;
+    opacity: .5;
+}
+
+footer .newssetler div input:focus {
+    outline: none;
+}
+
+footer .newssetler div button {
+    padding: 9px 10px;
+    color: var(--secondery-color)
+}
+
+footer nav {
+    background-color: var(--primary-color);
+}
+
+footer nav ul {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--font-color);
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+footer nav ul li a:hover {
+    color: var(--secondery-color);
+    text-shadow: 0 0 15px var(--secondery-color);
+    transition: all 0.5s ease;
+}
+
+.text {
+    font-size: 18px;
+    color: var(--font-color);
+    line-height: 1.5;
+    background-color: var(--primary-color);
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+footer .copywrite {
+    border-top: .5px solid rgb(128, 125, 125);
+}
+
+
+/* end footer style */
