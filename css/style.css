@@ -12,13 +12,16 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #ded8d8;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .flex {
     display: flex;
 }
+
+
+/**** header ***/
 
 header nav {
     justify-content: space-evenly;
@@ -68,6 +71,27 @@ header nav .icon-socail li a:hover {
     text-shadow: 0 0 15px var(--secondery-color);
     transition: all 0.5s ease;
 }
+
+
+/*** start responsive header ****/
+
+@media only screen and (max-width: 768px) {
+    header .nav {
+        justify-content: flex-start;
+    }
+    header nav .logo {
+        margin-left: 15px;
+    }
+    header nav .nav-link {
+        display: none;
+    }
+}
+
+
+/*** start responsive header ****/
+
+
+/**** end header ***/
 
 
 /* start dropdown  */
@@ -183,6 +207,13 @@ section .heade-market {
 section .heade-market div {
     align-items: center;
     font-size: 18px;
+}
+
+section .heade-market button {
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--font-color);
+    background-color: var(--primary-color);
 }
 
 section .heade-market div input {
