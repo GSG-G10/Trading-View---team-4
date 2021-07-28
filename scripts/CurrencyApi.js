@@ -27,11 +27,10 @@ const fetchPriceData = () => {
 fetchPriceData(); // invoke the function
 searchBtn.addEventListener('click',() => {
   clearCards();
-  let priceUrl = `https://api.binance.com/api/v3/ticker/price?symbol=${searchInput.value}`;
+  console.log(searchInput.value)
+  let priceUrl = `https://api.binance.com/api/v3/ticker/24hr?symbol=${searchInput.value}`;
   sympols.push(searchInput.value)
   fetchFromURL(priceUrl, (obj) => {
-    createCard(sympols.length-1, obj);
+    createCard(1, obj);
   });
-  let changesUrl = `https://api.binance.com/api/v3/ticker/24hr?symbol=${searchInput.value}`;
-  fetchFromURL(changesUrl, addPriceChanges);
 });
