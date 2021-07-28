@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trading View</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
-
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    /> -->
+  </head>
+  <body>
     <header>
-        <nav class="flex">
-            <div class="logo">tradingView</div>
-            <ul class="flex">
-                <li>
-                    <a href="#">markets</a>
-                </li>
-                <li>
-                    <a href="#">trade </a>
-                </li>
-                <li>
-                    <a href="#">derivatives</a>
-                </li>
-                <li>
-                    <a href="#">finance</a>
-                </li>
-                <li>
-                    <a href="#">fnt</a> </li>
-            </ul>
+      <nav class="flex">
+        <div class="logo">tradingView</div>
+        <ul class="flex">
+          <li>
+            <a href="#">markets</a>
+          </li>
+          <li>
+            <a href="#">trade </a>
+          </li>
+          <li>
+            <a href="#">derivatives</a>
+          </li>
+          <li>
+            <a href="#">finance</a>
+          </li>
+          <li>
+              <a href="#">fnt</a>
+            </li>
+        </ul>
+        
+    </ul>
+</nav>
+</header>
+<section class="flex">
+    <div class="clock flex">
+        <h2>london</h2>
 
+        <div class="clock-london">02:11:3</div>
+    </div>
+    <div class="clock flex">
+        <h2>jerusalem</h2>
 
-            <ul class="icon-socail flex">
-                <li class="facebook"><a href="#"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-                <li class="twitter"><a href="#"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-                <li class="instagram"><a href="#"><i class="fa fa-instagram " aria-hidden="true"></i></a></li>
-
-            </ul>
-
+        <div class="clock-london">02:11:3</div>
+    </div>
+    <div class="clock flex">
+        <h2>china</h2>
 
         </nav>
     </header>
-    <div class="indecatorValue">value</div>
-
+    <!-- <div class="indecatorValue">value</div> -->
+<!-- 
     <div class="dropdown">
         <button class="dropbtn">Dropdown</button>
         <div class="dropdown-content">
@@ -51,12 +62,30 @@
           <span class="sma">sma</span>
           <span >Link 3</span>
         </div>
-      </div>
-</body>
+      </div> -->
+
+        <div class="clock-china">02:11:3</div>
+    </div>
+
+</section>
+    <section class="sympols-section">
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+        <div class="sympol-container"></div>
+    </section>
+
     <script src="./scripts/Logic.js"></script>
+    <script src="./scripts/CurrencyApi.js"></script>
+    <script src="./scripts/DomFunctions.js"></script>
     <script src="./scripts/ema.js"></script>
     <script src="./scripts/sma.js"></script>
-    <script src="./scripts/DomFunctions.js"></script>
 
-
+  </body>
 </html>

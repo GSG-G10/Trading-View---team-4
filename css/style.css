@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 :root {
@@ -57,8 +59,7 @@ header nav .icon-socail li a {
     font-size: 22px;
 }
 
-header nav .icon-socail li a:hover
-{
+header nav .icon-socail li a:hover {
     color: var(--secondery-color);
     text-shadow: 0 0 15px var(--secondery-color);
     transition: all 0.5s ease;
@@ -111,3 +112,36 @@ header nav .icon-socail li a:hover
     background-color: #3e8e41;
   }
 /* finsh dropdown  */
+section {
+    margin: 10px;
+    justify-content: center;
+}
+
+section .clock {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 25%;
+    height: 120px;
+    margin: 10px;
+    color: var(--font-color);
+    text-transform: capitalize;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .clock h2 {
+    margin: 10px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 7px;
+}
+
+section .clock div {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    color: var(--secondery-color);
+    letter-spacing: 7px;
+    background-color: var(--primary-color);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
