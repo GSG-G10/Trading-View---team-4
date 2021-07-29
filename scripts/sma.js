@@ -23,23 +23,6 @@ function calculateSma(number,arr, format,range=7) {
     changeIndecatorValue(number,res[res.length - 1]);
 }
 
-
-
-
-function avg(arr, idx, range) {
-    return sum(arr.slice(idx - range, idx)) / range;
-}
-  
-
-function sum(arr) {
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    return arr.reduce(reducer)
-}
-
-function toFixed(n) {
-    return n.toFixed(2);
-}
-  
  
   
 function smaclick(num,creptoName) {
