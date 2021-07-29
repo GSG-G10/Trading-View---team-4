@@ -1,5 +1,5 @@
 function calculateSma(number,arr, format,range=7) {
-    let new_a = []
+    const new_a = []
     for(let ele=0 ; ele < 10;ele++){
         try {
             
@@ -13,11 +13,11 @@ function calculateSma(number,arr, format,range=7) {
       throw TypeError('expected first argument to be an array');
     }
   
-    var fn = typeof format === 'function' ? format : toFixed;
-    var num = range || new_a.length;
-    var res = [];
-    var len = new_a.length + 1;
-    var idx = num - 1;
+    let fn = typeof format === 'function' ? format : toFixed;
+    let num = range || new_a.length;
+    const res = [];
+    let len = new_a.length + 1;
+    let idx = num - 1;
     while (++idx < len) {
       res.push(fn(avg(new_a, idx, num)));
     }
