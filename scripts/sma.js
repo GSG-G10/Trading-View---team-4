@@ -33,10 +33,8 @@ function avg(arr, idx, range) {
   
 
 function sum(arr) {
-    var len = arr.length;
-    var num = 0;
-    while (len--) num += Number(arr[len]);
-    return num;
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    return arr.reduce(reducer)
 }
 
 function toFixed(n) {
@@ -48,4 +46,6 @@ function toFixed(n) {
 function smaclick(num,creptoName) {
     fetchFromURL(`https://api.binance.com/api/v3/klines?symbol=${creptoName}&interval=5m`,(value) => {calculateSma(num,value)})
 }
+
+
 
