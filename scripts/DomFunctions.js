@@ -6,7 +6,7 @@ function changeIndecatorValue(num,value){
 }
 /* ************************** Dom variables ************************ */
 const sympolsContainer = document.querySelector(".sympols-section");
-// const sympolDiv = document.querySelector(".sympol-container");
+
 /* ************************** Generic functions for Dom ************************ */
 const appendElement = (parent, child) => {
   parent.appendChild(child);
@@ -53,14 +53,14 @@ const createCard = (i, obj) => {
 //   -----------------------
     const indecatorValue = createElement("div");
     addClass(indecatorValue, `indecatorValue${i}`);
-    indecatorValue.textContent = "value";
+    indecatorValue.textContent = ".......";
     appendElement(containerDiv, indecatorValue);
     const dropdownDiv = createElement("div");   
     addClass(dropdownDiv, "dropdown");
     appendElement(containerDiv, dropdownDiv);
     const dropbtn = createElement("p");
     addClass(dropbtn, "dropbtn");
-    dropbtn.textContent = "dropdown";
+    dropbtn.textContent = "indicators";
     appendElement(dropdownDiv, dropbtn);
 
     const dropcontent = createElement("div");
@@ -82,10 +82,6 @@ const createCard = (i, obj) => {
 
 // ------------------------------
 };
-
-const addPriceChanges = (obj) => {
-};
-
 
 
 const clearCards = () => {

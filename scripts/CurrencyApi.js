@@ -35,3 +35,11 @@ searchBtn.addEventListener('click',() => {
   let changesUrl = `https://api.binance.com/api/v3/ticker/24hr?symbol=${searchInput.value}`;
   fetchFromURL(changesUrl, addPriceChanges);
 });
+
+searchInput.onkeyup = function() {
+  if (searchInput.value.length > 0) {
+    searchBtn.disabled = false;
+  } else {
+    searchBtn.disabled = true;
+  }
+}

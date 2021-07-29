@@ -5,7 +5,6 @@ function calculateSma(number,arr, format,range=7) {
             
             new_a.push(parseFloat(arr[arr.length - ele][4]))
         } catch (error) {
-            // console.log('eroo')
         }
         
     }
