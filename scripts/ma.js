@@ -4,7 +4,6 @@ function calculateMa(arr,num){
         try {
             emaValue += parseFloat(arr[arr.length - ele][4])
         } catch (error) {
-            // console.log('eroo')
         }
         
     }

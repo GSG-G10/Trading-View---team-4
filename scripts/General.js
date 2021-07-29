@@ -13,21 +13,26 @@ const fetchFromURL = (url, cb) => {
     xhr.send();
 }
 
+function sum(arr) {
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    return arr.reduce(reducer)
+}
+
+
+
 function avg(arr, idx, range) {
     return sum(arr.slice(idx - range, idx)) / range;
 }
 
-
 function sum(arr) {
-    var len = arr.length;
-    var num = 0;
-    while (len--) num += Number(arr[len]);
-    return num;
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    return arr.reduce(reducer)
 }
 
 function toFixed(n) {
     return n.toFixed(2);
 }
+  
 
 if (typeof module !== "undefined") {
     module.exports = { avg, sum, toFixed };

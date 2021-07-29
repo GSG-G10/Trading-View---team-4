@@ -5,6 +5,8 @@
                 box-sizing: border-box;
             }
             
+
+            
              :root {
                 --primary-color: #181a20;
                 --font-color: white;
@@ -27,14 +29,18 @@
                 background-color: var(--primary-color);
                 height: 50px;
             }
-            
+          
+            .searchBtn:disabled {
+                opacity: 70%;
+            }
+
             header nav .logo {
                 text-transform: capitalize;
                 color: var(--secondery-color);
                 font-size: 25px;
                 text-shadow: 0 0 15px var(--secondery-color);
             }
-            
+
             header nav ul {
                 list-style: none;
             }
