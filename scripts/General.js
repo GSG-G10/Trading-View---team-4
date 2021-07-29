@@ -1,8 +1,12 @@
 const fetchFromURL = (url, cb) => {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            cb(JSON.parse(xhr.responseText));
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                cb(JSON.parse(xhr.responseText));
+            } else {
+                cb(xhr.status);
+            }
         }
     };
     xhr.open("GET", url);

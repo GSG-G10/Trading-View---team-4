@@ -6,6 +6,9 @@ const timeFetch = () => {
 };
 
 const extractTime = (data) => {
+    if (Number.isInteger(data)) {
+        alert("An error occured when requesting api \n Error code : " + data);
+    }
     const city = data['data']['timezone']['id'].split('/')[1];
     const timeText = data['data']['datetime']['time'].split(':');
     const hours = timeText[0] - 0;
